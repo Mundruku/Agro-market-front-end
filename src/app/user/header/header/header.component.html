@@ -1,0 +1,129 @@
+<nav class="bg-info header_postion">
+
+    <div class="nav_container">
+        <a href="#" style="margin-left:10px;">Agro Market</a>
+
+
+        <form class="search_bar">
+
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categories All
+            </a>
+
+                <div class="dropdown-menu drop_item" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+            <input class="" type="search" placeholder="Search" aria-label="Search" style="margin-left: 0%;">
+            <button type="submit">Search</button>
+        </form>
+
+
+        <div class="login_register">
+
+            <a href="#" data-toggle="modal" data-target="#loginModal" data-whatever="@mdo">Login</a>
+
+            <a href="#" data-toggle="modal" data-target="#signupModal" data-whatever="@mdo">Register</a>
+        </div>
+
+
+    </div>
+
+</nav>
+<section class="bg-info country_regions header_postion">
+
+
+    <div style="margin-top: 10px; color: white;">Find any agro product in any region of Uganda</div>
+    <div class="dropdown ">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     Uganda All
+    </a>
+
+        <div class="dropdown-menu drop_item" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Northern</a>
+            <a class="dropdown-item" href="#">Eastern</a>
+            <a class="dropdown-item" href="#">Western</a>
+            <a class="dropdown-item" href="#">South</a>
+        </div>
+    </div>
+    <button type="button" class="btn btn-secondary" style="margin-left: 10%; width: 5%;">Sell</button>
+
+
+</section>
+
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h5 class="modal-title w-100" id="exampleModalLabel">Sign in</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmitLogin()">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Email</label>
+                        <input type="text" class="form-control" id="recipient-name" formControlName="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Password:</label>
+                        <input type="password" class="form-control" id="recipient-name" formControlName="password">
+                    </div>
+                    <div class="modal-footer justify-content-center">
+
+                        <button type="submit" class="btn btn-secondary">Login</button>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h5 class="modal-title w-100" id="exampleModalLabel">Sign in</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="registerForm" (ngSubmit)="onSubmitRegister()">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">First Name</label>
+                        <input type="text" class="form-control" id="recipient-name" formControlName="firstName">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Last Name</label>
+                        <input type="text" class="form-control" id="recipient-name" formControlName="lastName">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Email</label>
+                        <input type="email" class="form-control" id="recipient-name" formControlName="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-name" class="col-form-label">Password:</label>
+                        <input type="password" class="form-control" id="recipient-name" formControlName="password">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="recipient-name" formControlName="user_type" hidden>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+
+                        <button type="submit" class="btn btn-secondary">Register</button>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>

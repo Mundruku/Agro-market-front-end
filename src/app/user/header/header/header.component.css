@@ -1,0 +1,46 @@
+.nav_container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+.search_bar {
+    display: flex;
+    margin-left: auto;
+    flex-basis: 70%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.search_bar input {
+    width: 60%;
+}
+
+.login_register {
+    margin-left: auto;
+}
+
+.login_register a {
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+
+.country_regions {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.drop_item a {
+    color: black;
+}
+
+.text-center {
+    text-align: center!important;
+}

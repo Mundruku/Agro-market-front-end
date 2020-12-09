@@ -1,0 +1,56 @@
+.w-100 {
+    width: 100% !important;
+    height: 30vh;
+}
+
+
+/*popular and broowse categories style */
+
+.category_popular {
+    display: flex;
+}
+
+.browse_category {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 2%;
+    height: 90%;
+}
+
+.browse_category a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    margin-bottom: 10%;
+}
+
+.browse_category svg {
+    margin-left: auto;
+}
+
+.popular_list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+
+.trending_category_title {
+    display: flex;
+    margin-top: 2%;
+}
+
+.category_title {
+    display: flex;
+    width: 20%;
+    margin-left: 2%;
+}
+
+.popular_title {
+    display: flex;
+    margin-left: 10px;
+}
+
+.dropright:hover>.dropdown-menu {
+    display: block;
+}
